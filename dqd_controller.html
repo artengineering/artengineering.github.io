@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Main</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	<head/>
+	<body>
+		<div class="wrapper">
+			<div class="menu_container">
+				<div class="my_name">
+					<p>ARTUR GALT</p>
+				</div>
+				<div class="menu">
+					<div class="item"><p><a href="index.html">HOME</a></p></div>
+					<div class="item"><p><a href="projects.html">PROJECTS</a></p></div>
+<!--
+					<div class="item"><p><a href="">CONTACT</a></p></div>
+-->
+				</div>
+			</div>
+			<div class="project_full">
+				<div class="project_description_full">
+					<h3>FPGA BASED CONTROLLER</h3>
+					<p>Designed to work as a part of the modular backplane based system for protecting superconducting magnets (Digital Quench Detection System). Controller interacts with other modules via backplane.</p>
+				</div>
+				<div class="project_picture_full">
+					<img src="dqd_controller.jpg"/>
+				</div>
+				<div class="project_description_list">
+					<h4>What I have done:</h4>
+					<ul>
+						<li>Generated idea</li>
+						<li>Contributed to generating functional and technical specification</li>
+						<li>Designed complete schematic in Altium</li>
+						<li>Chose components for the board</li>
+						<li>Ordered components</li>
+						<li>Did the layout of the PCB in Altium</li>
+						<li>Ordered the PCB and PCB assembly</li>
+						<li>Prepared detailed test plan</li>
+						<li>Troubleshooted and tested the board</li>
+						<li>Wrote HDL code for FPGA for testing PCB</li>
+						<li>Wrote HDL code for FPGA for production</li>
+						<li>Wrote test benches' HDL code for simulation in Vivado Simulator</li>
+						<li>Tested and debugged Verilog modules in Vivado Simulator</li>
+						<li>Performed integration test of the completed Verilog project</li>
+						<li>Test benches use text file as a source of stimulus and automaticaly generate verification report</li>
+						<li>Generated the TCL script for recreating the project in Vivado from source files</li>
+						<li>Designed the front panel of the controller in AutoCAD</li>
+					</ul>
+					<h4>PCB features and characteristics:</h4>
+					<ul>
+						<li>DC-DC With 4 outputs: 3.3V, 1.8V, 1.5V, 1.0V</li>
+						<li>Xilinx Z7C020</li>
+						<li>DDR3 SDRAM memory 256 MB</li>
+						<li>Ethernet 100Mb/1Gb</li>
+						<li>Flash memory</li>
+						<li>EEPROM memory</li>
+						<li>8 optoisolated digital outputs</li>
+						<li>8 optoisolated digital inputs</li>
+						<li>Linear regulator +11v, -11V for analog part</li>
+						<li>SAR ADC 24 bit</li>
+						<li>SAR ADC 16 bit</li>
+						<li>DAC 18 bit</li>
+					</ul>
+					<h4>Verilog project:</h4>
+					<ul>
+						<li>SPI controller for communication with GUI via NI cRIO</li>
+						<li>Communication protocol</li>
+						<li>SPI multiplexer for module communication via backplane </li>
+						<li>SPI driver for ADC</li>
+						<li>Register file with memory access through SPI instructions</li>
+						<li>Circular buffer for ADC samples</li>
+						<li>Data processing and FSM based protection logic</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

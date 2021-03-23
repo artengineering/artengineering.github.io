@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Main</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	<head/>
+	<body>
+		<div class="wrapper">
+			<div class="menu_container">
+				<div class="my_name">
+					<p>ARTUR GALT</p>
+				</div>
+				<div class="menu">
+					<div class="item"><p><a href="index.html">HOME</a></p></div>
+					<div class="item"><p><a href="projects.html">PROJECTS</a></p></div>
+<!--
+					<div class="item"><p><a href="">CONTACT</a></p></div>
+-->
+				</div>
+			</div>
+			<div class="project_full">
+				<div class="project_description_full">
+					<h3>FPGA BASED DQD MODULE</h3>
+					<p>Designed to work as a part of the modular backplane based system for protecting superconducting magnets (digital quench detection system).</p>
+				</div>
+				<div class="project_picture_full">
+					<img src="dqd_module.jpg"/>
+				</div>
+				<div class="project_description_list">
+					<h4>What I have done:</h4>
+					<ul>
+						<li>Generated idea</li>
+						<li>Contributed to generating functional and technical specification</li>
+						<li>Designed complete schematic in Altium</li>
+						<li>Chose components for the board</li>
+						<li>Ordered components</li>
+						<li>Did the layout of the PCB in Altium</li>
+						<li>Ordered the PCB and PCB assembly</li>
+						<li>Prepared detailed test plan</li>
+						<li>Troubleshooted and tested the board</li>
+						<li>Wrote HDL code for FPGA for testing PCB</li>
+						<li>Wrote HDL code for FPGA for production</li>
+						<li>Wrote test benches' HDL code for simulation in Vivado Simulator</li>
+						<li>Tested and debugged Verilog modules in Vivado Simulator</li>
+						<li>Performed integration test of the completed Verilog project</li>
+						<li>Test benches use text file as a source of stimulus and automaticaly generate verification report</li>
+						<li>Generated the TCL script for recreating the project in Vivado from source files</li>
+						<li>Designed the front panel of the controller in AutoCAD</li>
+					</ul>
+					<h4>PCB features and characteristics:</h4>
+					<ul>
+						<li>4 isolated (1500V) low-noise 16b ADC channels:</li>
+						<li>Signal conditioning with settable gain or attenuation and settable lowpass filter</li>
+						<li>Isolated SPI interface between analog and digital part</li>
+						<li>Isolated I2C interface between analog and digital part</li>
+						<li>DC-DC with 3 outputs for digital part: 3.3V, 1.8V, 1.0V</li>
+						<li>Xilinx Artix-7 FPGA XC7A100TCSG324</li>
+						<li>SRAM memory 1x16Mb</li>
+						<li>Flash memory</li>
+						<li>EEPROM memory</li>
+					</ul>
+					<h4>Verilog project:</h4>
+					<ul>
+						<li>SPI controller for communicating with GUI via NI cRIO</li>
+						<li>Communication protocol</li>
+						<li>SPI driver for ADC</li>
+						<li>I2C driver for interfacing with digital expander</li>
+						<li>Register file with memory access through SPI instructions for system configuration and status</li>
+						<li>SRAM driver</li>
+						<li>SRAM based circular buffer for ADC samples</li>
+						<li>Data processing and protection logic (threshold crossing)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
